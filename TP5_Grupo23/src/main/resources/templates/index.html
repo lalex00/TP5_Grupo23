@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang=es>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>	
 <title>Inicio</title>
 </head>
 <body>
 
-	<header>
-		<h1>TP04 Programación Visual</h1>
-		<img alt="Logo de La Facultad" src="../static/images/unju.png" title="UNJu">
+	<header th:replace="/layouts/header::header">
+<!-- 		<h1>TP04 Programación Visual</h1> -->
+<!-- 		<img alt="Logo de La Facultad" src="../static/images/unju.png" title="UNJu"> -->
 		
 	</header>
 	
@@ -32,9 +33,8 @@
 		</ol>
 	</section>
 	
-	<footer>
-		<p>2022. Portal de Capacitación – Av. Gral. Manuel Belgrano 789 – Teléfono (388) 999999 S. S. de Jujuy República
-Argentina</p>
+	<footer th:replace="/layouts/footer::footer">
+	
 	</footer>
 </body>
 </html>
