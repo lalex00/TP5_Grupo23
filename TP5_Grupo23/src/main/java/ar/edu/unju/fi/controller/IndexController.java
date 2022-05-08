@@ -11,6 +11,7 @@ import ar.edu.unju.fi.model.Alumno;
 @RequestMapping("/pcfi")
 public class IndexController {
 	
+	
 	@GetMapping("/inicio")
 	public String getIndexPage(Model model) {
 		
