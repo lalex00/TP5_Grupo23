@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fi.unju.edu.ar</groupId>
-	<artifactId>TP4_Grupo23</artifactId>
+	<artifactId>TP5_Grupo23</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TP4_Grupo23</name>
+	<name>TP5_Grupo23</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -37,25 +37,21 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
-<dependency>
-    <groupId>org.webjars</groupId>
-    <artifactId>bootstrap</artifactId>
-    <version>5.1.3</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
-<dependency>
-    <groupId>org.webjars</groupId>
-    <artifactId>jquery</artifactId>
-    <version>3.6.0</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.webjars.npm/popper.js -->
-<dependency>
-    <groupId>org.webjars.npm</groupId>
-    <artifactId>popper.js</artifactId>
-    <version>1.16.1</version>
-</dependency>
-
+			<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>bootstrap</artifactId>
+		    <version>5.1.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>3.6.0</version>
+		</dependency>
+		
+		
+		
 	</dependencies>
 
 	<build>
