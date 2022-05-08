@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+p{
+	font-size: 1rem;
+	font-family: Sans-serif;
+	color: E0E0E0;	
+	
+}
+a{
+	text-decoration:none;
+	font-size: .75rem;
+}
