@@ -9,17 +9,32 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
-	@GetMapping("/index.html")
+	@GetMapping(path = "/index")
 	public String home() {
 		return "index";
 	}
 	
-	@GetMapping("/agenda.html")
+	@GetMapping("/agenda")
 	public String agenda() {
 		return "agenda";
 	}
 	
-	@GetMapping("/nuevo_docente.html")
+	@GetMapping("/beneficios")
+	public String beneficio() {
+		return "beneficios";
+	}
+	
+	@GetMapping("/contacto")
+	public String contacto() {
+		return "contacto";
+	}
+	
+	@GetMapping("/idiomas")
+	public String idiomas() {
+		return "idiomas";
+	}
+	
+	@GetMapping("/nuevo_docente")
 	public String nuevo_docente() {
 		return "nuevo_docente";
 	}
