@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.model;
+package fi.unju.edu.ar.model;
 
 public class Alumno {
 	private String nombres;

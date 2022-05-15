@@ -1,3 +1,4 @@
+package fi.unju.edu.ar.controller;
 //package ar.edu.unju.fi.controller;
 //
 //import org.springframework.stereotype.Controller;
