@@ -19,6 +19,16 @@ public class HomeController {
 		return "agenda";
 	}
 	
+	@GetMapping("/beneficios.html")
+	public String getBeneficios() {
+		return "beneficios";
+	}
+	
+	@GetMapping("/contacto.html")
+	public String getContacto() {
+		return "contacto";
+	}
+	
 	@GetMapping("/nuevo_docente.html")
 	public String nuevo_docente() {
 		return "nuevo_docente";
