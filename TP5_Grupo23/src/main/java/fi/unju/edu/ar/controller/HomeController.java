@@ -19,6 +19,7 @@ public class HomeController {
 		return "agenda";
 	}
 	
+
 	@GetMapping("/beneficios")
 	public String beneficio() {
 		return "beneficios";
@@ -34,7 +35,18 @@ public class HomeController {
 		return "idiomas";
 	}
 	
-	@GetMapping("/nuevo_docente")
+
+	@GetMapping("/beneficios.html")
+	public String getBeneficios() {
+		return "beneficios";
+	}
+	
+	@GetMapping("/contacto.html")
+	public String getContacto() {
+		return "contacto";
+	}
+	
+
 	public String nuevo_docente() {
 		return "nuevo_docente";
 	}
