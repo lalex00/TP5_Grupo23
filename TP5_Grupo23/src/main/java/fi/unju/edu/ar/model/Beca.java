@@ -1,5 +1,7 @@
 package fi.unju.edu.ar.model;
 
+import java.time.LocalDate;
+
 public class Beca {
 		private String fechaInicio;
 		private String fechaFIn;
@@ -14,6 +16,10 @@ public class Beca {
 			this.curso = curso;
 			this.codigo = codigo;
 			this.estado = estado;
+		}
+
+		public Beca(int i, Curso curso1, LocalDate of, LocalDate of2) {
+			// TODO Auto-generated constructor stub
 		}
 
 		public String getFechaInicio() {

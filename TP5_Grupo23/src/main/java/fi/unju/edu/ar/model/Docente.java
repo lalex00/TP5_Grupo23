@@ -15,6 +15,9 @@ public class Docente {
 			this.email = email;
 			this.telefono = telefono;
 		}
+		public Docente(int legajo2, String nombre2, String apellido2, String email2, String string) {
+			// TODO Auto-generated constructor stub
+		}
 		public int getLegajo() {
 			return legajo;
 		}

@@ -1,5 +1,7 @@
 package fi.unju.edu.ar.model;
 
+import java.time.LocalDate;
+
 public class Curso {
 		private int codigo;
 		private int horas;
@@ -19,6 +21,10 @@ public class Curso {
 			this.fechaFin = fechaFin;
 			this.modalidad = modalidad;
 			this.docente = docente;
+		}
+		public Curso(int i, String string, LocalDate of, LocalDate of2, int j, String string2, Docente docente1,
+				String string3) {
+			// TODO Auto-generated constructor stub
 		}
 		public int getCodigo() {
 			return codigo;
