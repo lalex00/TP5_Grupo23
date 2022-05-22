@@ -6,19 +6,43 @@
 <title></title>
 </head>
 <body>
-	<header class="container py-5" th:fragment="header" style="background-color: #e3f2fd;">
+	<header class="container" th:fragment="header" style="background-color: #e3f2fd;">
 		<img alt="Logo de La Facultad" src="/images/unju.png" title="UNJu">
-		<h1>Grupo23 Programación Visual</h1>
-		<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-			<ul>
-				<li><a class="btn btn-outline-success me-2" href="index"> Inicio </a></li>
-				<li><a class="btn btn-outline-success me-2" href="agenda"> Agenda </a></li>
-				<li><a class="btn btn-outline-success me-2" href="beneficios">Beneficios y Becas </a></li>
-				<li><a class="btn btn-outline-success me-2" href="contacto"> Contáctanos </a></li>
-				
-			</ul>
-
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="agenda">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="beneficios">Beneficios y becas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contacto">Contactanos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Datos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="listado_docentes">Docentes</a></li>
+            <li><a class="dropdown-item" href="listado_alumnos">Alumnos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Becas</a></li>
+            <li><a class="dropdown-item" href="#">Cursos</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      
+    </div>
+  </div>
+</nav>
 	</header>
 </body>
 </html>
