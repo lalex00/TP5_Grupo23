@@ -35,6 +35,10 @@ public class HomeController {
 		return "idiomas";
 	}
 	
+	@GetMapping("/lista_alumnos")
+	public String alumnos() {
+		return "lista_alumnos";
+	}
 
 	@GetMapping("/beneficios.html")
 	public String getBeneficios() {
@@ -44,6 +48,11 @@ public class HomeController {
 	@GetMapping("/contacto.html")
 	public String getContacto() {
 		return "contacto";
+	}
+	
+	@GetMapping("/lista_alumnos.html")
+	public String getAlumnos() {
+		return "lista_alumnos";
 	}
 	
 
