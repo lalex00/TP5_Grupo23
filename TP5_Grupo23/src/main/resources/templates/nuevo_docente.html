@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Alta Docente</title>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
-	<header>
-	<h1>Alta Docente</h1>
-	</header>
-	<section>
-		<form action="/insertardocente" method="get">
-			<label for="idlegajo">Legajo</label>
-			<input id="idlegajo" type="text"/>
-			<br/><br/>
-			<label for="idnombre">Nombres</label>
-			<input id="idnombre" type="text"/>
-			<br/><br/>
-			<label for="idapellidos">Apellidos</label>
-			<input id="idtel" type="tel"/>
-			<br/><br/>
-			<label for="idemail">E-Mail</label>
-			<input id="idemail" type="email"/>
-			<br/><br/>
-			<label for="idtel">Telefono:</label>
-			<input id ="idtel" type="tel"/>
-			<br/><br/>
-			<p>
-				<input type="submit" value="Enviar">
-				<a href="/index.html">Cancelar</a>
-  			</p>
-		</form>
+ 	
+	<header th:replace="/layouts/header :: header"></header>
+		<div class="container-fluid" id="cuerpo">
+							<div class="container col-4" >
+			<br>
+			<p class="h4">Alta del Docente</p>
+			<br>
 	
-	</section>
+			<form th:action="@{/docente/guardar}" method="POST" th:object="${docente}">
+				<div class="mb-3">
+					<label for="dniId" class="form-label">Legajo</label> 
+					<input  th:field="*{legajo}" type="number" class="form-control" id="legajoId" placeholder="Ingrese legajo">
+				</div>
+				<div class="mb-3">
+					<label for="nombresId" class="form-label">Nombres</label> 
+					<input  th:field="*{nombre}" type="text" class="form-control" id="nombresId" placeholder="Ingrese nombre/s">
+				</div>
+				<div class="mb-3">
+					<label for="apellidosId" class="form-label">Apellidos</label> 
+					<input  th:field="*{apellido}" type="text" class="form-control" id="apellidosId" placeholder="Ingrese apellido/s">
+				</div>
+				<div class="mb-3">
+					<label for="emailId" class="form-label">E-mail</label> 
+					<input th:field="*{email}" type="email" class="form-control" id="emailId" placeholder="Ingrese e-mail">
+				</div>
+				<div class="mb-3">
+					<label for="telefonoId" class="form-label">Telefono</label> 
+					<input th:field="*{telefono}" type="text" class="form-control" id="telefonoId" placeholder="Ingrese su telefono aqui">
+				</div>
+				<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+					<button class="btn btn-primary m-3" type="submit">Enviar</button>
+					 <a th:href="@{/docente/listaDocentes}" id="cancel" class="btn btn-secondary m-3">Cancelar</a>
+	  				
+				</div>
+			</form>
+		</div>
+		
+		</div>
+		
+	<footer th:replace="/layouts/footer :: footer"></footer>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script>
+		<script type="text/javascript" th:src="@{/webjars/popper.js/2.9.3/umd/popper.min.js}"></script>
+		<script type="text/javascript" th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
 </body>
 </html>

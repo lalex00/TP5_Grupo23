@@ -1,37 +1,39 @@
 package fi.unju.edu.ar.model;
 
 public class Alumno {
-	private String nombres;
+	private int dni;
+	private String nombre;
 	private String apellido;
-	private String eMail;
+	private String email;
+	private String telefono;
 	
 	public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
 
-	public Alumno(String nombres, String apellido, String eMail) {
+	public Alumno(int dni, String nombre, String apellido, String email, String telefono) {
 		super();
-		this.nombres = nombres;
+		this.dni = dni;
+		this.nombre = nombre;
 		this.apellido = apellido;
-		this.eMail = eMail;
+		this.email = email;
+		this.telefono = telefono;
 	}
 
-
-
-	public Alumno(int i, String string, String string2, String string3, String string4) {
-		// TODO Auto-generated constructor stub
+	public int getDni() {
+		return dni;
 	}
 
-
-
-	public String getNombres() {
-		return nombres;
+	public void setDni(int dni) {
+		this.dni = dni;
 	}
 
-	public void setNombres(String nombres) {
-		this.nombres = nombres;
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getApellido() {
@@ -42,12 +44,26 @@ public class Alumno {
 		this.apellido = apellido;
 	}
 
-	public String geteMail() {
-		return eMail;
+	public String getEmail() {
+		return email;
 	}
 
-	public void seteMail(String eMail) {
-		this.eMail = eMail;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	@Override
+	public String toString() {
+		return "Alumno [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email
+				+ ", telefono=" + telefono + "]";
 	}
 	
 	

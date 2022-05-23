@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import fi.unju.edu.ar.controller.AlumnoController;
 import fi.unju.edu.ar.model.Alumno;
 import fi.unju.edu.ar.html.util.ListaAlumno;
 
@@ -17,14 +18,20 @@ import fi.unju.edu.ar.html.util.ListaAlumno;
 @RequestMapping("/alumno")
 public class AlumnoController {
 	
-	
-	
 	private static final Log LOGGER = LogFactory.getLog(AlumnoController.class);
 	
 	@GetMapping("/nuevo")
 	public String getFormNuevoAlumnnoPage(Model model) {
 		model.addAttribute("alumno", new Alumno());
 		return "nuevo_alumno";
+	}
+	
+	@GetMapping("/listaAlumnos")
+	public ModelAndView getListadoAlumnosPage() {
+		ModelAndView mav = new ModelAndView("lista_alumnos");
+		ListaAlumno listaAlumnos= new ListaAlumno();
+		mav.addObject("alumnos", listaAlumnos.getAlumnos());
+		return mav;
 	}
 	
 	@PostMapping("/guardar")

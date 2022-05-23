@@ -1,12 +1,20 @@
-@charset "UTF-8";
+#header-principal{
+	/*display: flex;*/
+	min-height:200px;
+	/*margin: 10px;*/
+	background-color: #e3f2fd;
+}
+header p{
+	font-family: sans-serif;
+	font-style: italic;
+	font-size: 12px;
 
-p{
-	font-size: 1rem;
-	font-family: Sans-serif;
-	color: E0E0E0;	
-	
 }
-a{
-	text-decoration:none;
-	font-size: .75rem;
+#cuerpo{
+	background-color: #e3f2fd;
 }
+
+
+
+
+

@@ -2,15 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org" lang=es>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css"/>	
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 <title>Agenda</title>
 </head>
 <body>
 	<header th:replace="/layouts/header::header">
 		
 	</header>
-	<div class="container" style="background-color: #e3f2fd;">
-	<section>
+	<div class="container-fluid" id="cuerpo">
+	<section >
 		<p class="p-1">Primero, usar un calendario nos ayuda a crear una rutina en nuestro día. Por ejemplo, la mayoría de nosotros nos levantamos de la cama a una hora determinada, realizamos nuestros rituales diarios de aseo y desayuno y luego nos dirigimos al trabajo. Una vez que llegamos al trabajo, también caemos en un patrón. Muchos de nosotros encendemos nuestros ordenadores, revisamos los mensajes de correo y nos tomamos unos minutos para responder todo.
 Se podría argumentar que no es necesario un calendario para que podamos completar esas asignaciones. Pero para algunos, lo es. El uso de un calendario con franjas horarias permite que algunas personas asignen una cierta cantidad de su día a estas actividades antes de pasar a otras tareas menos rutinarias.
 Una segunda forma en que el uso de un calendario nos ayuda a ser más productivos en nuestro trabajo diario es eliminar los elementos de nuestra lista de tareas pendientes.  Este método de trabajo asegura que las tareas importantes no se queden fuera de la lista y que todo lo que se necesita lograr realmente se haga. Los calendarios son importantes para ayudarnos a programar tiempo para tomarnos un descanso de vez en cuando.
@@ -29,5 +30,8 @@ Los estudios han demostrado que las personas necesitan descansos de vez en cuand
 	<footer th:replace="/layouts/footer :: footer">
 	
 	</footer>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script>
+		<script type="text/javascript" th:src="@{/webjars/popper.js/2.9.3/umd/popper.min.js}"></script>
+		<script type="text/javascript" th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
 </body>
 </html>
